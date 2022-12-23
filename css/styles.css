@@ -506,6 +506,7 @@ a:focus,
   width: 16px;
   height: 15px;
   margin-right: 8px;
+  margin-left: 13px;
   border: 2px solid var(--first-text-color);
   border-radius: 2px;
   transition: background-color var(--transition-time) var(--transition-style),
