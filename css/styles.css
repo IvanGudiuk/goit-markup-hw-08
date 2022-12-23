@@ -159,6 +159,7 @@ a:focus,
 }
 .contact-icon {
   margin-right: 10px;
+  fill: inherit;
 }
 .contact {
   display: flex;
@@ -170,6 +171,7 @@ a:focus,
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  fill: var(--second-text-color);
 }
 /* Кінець хедера */
 
