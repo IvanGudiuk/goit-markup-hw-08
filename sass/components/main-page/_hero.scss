@@ -1,0 +1,35 @@
+.hero {
+  max-width: 1600px;
+  padding: 200px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/../images/bannerimage.jpg");
+}
+.hero__title {
+  width: 696px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $text-color-on-bkg;
+}
+.hero__button {
+  margin-top: 30px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 32px;
+  cursor: pointer;
+  color: $text-color-on-bkg;
+  background-color: $accent-color;
+}

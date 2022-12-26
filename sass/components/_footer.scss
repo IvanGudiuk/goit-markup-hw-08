@@ -1,0 +1,113 @@
+.flex-container {
+  display: flex;
+  align-items: baseline;
+}
+.page-footer {
+  background-size: 1600px;
+  background-color: $bcg-color;
+  padding: 60px 0;
+}
+.page-footer__title {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color-on-bkg;
+}
+.page-footer__contact {
+  margin-right: 70px;
+}
+.page-footer__address {
+  display: block;
+  margin-bottom: 9px;
+  margin-right: 0;
+  padding: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color-on-bkg;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-right: 70px;
+  padding-right: 24px;
+}
+.contact-list__link {
+  transition: color $transition-time $transition-style;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover {
+    color: $accent-color;
+  }
+}
+.footer-links__list {
+  margin-right: 93px;
+  display: flex;
+  gap: 10px;
+}
+.footer-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transition-time $transition-style;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer-links__icon {
+  fill: $text-color-on-bkg;
+}
+.footer-form {
+  display: flex;
+}
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  color: $text-color-on-bkg;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  &::placeholder {
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 0;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $text-color-on-bkg;
+}
+.footer-form__icon {
+  margin-left: 10px;
+}
