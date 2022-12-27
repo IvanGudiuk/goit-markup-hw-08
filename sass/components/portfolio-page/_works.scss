@@ -5,25 +5,25 @@
   margin-top: 50px;
 }
 .works__link {
+  position: relative;
   display: block;
+  overflow: hidden;
+  transition: box-shadow $transition-time $transition-style;
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.works__item {
-  position: relative;
-  display: block;
-  background-color: #ffffff;
-  transition: box-shadow $transition-time $transition-style;
-}
 .works__wrapper {
+  position: relative;
+  z-index: 20;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 24px;
+  background-color: #ffffff;
 }
 .works__title {
   font-weight: 700;
@@ -53,10 +53,9 @@
   color: $text-color-on-bkg;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  transform: scaleY(0);
-  transform-origin: bottom;
+  transform: translate(0, 294px);
   transition: transform $transition-time $transition-style;
   .works__link:hover & {
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
