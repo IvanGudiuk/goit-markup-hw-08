@@ -1,6 +1,17 @@
+.section--nopadding {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 0;
+  }
+}
+
 .galary {
-  display: flex;
-  gap: 30px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+  }
 }
 .galary__title {
   margin-bottom: 50px;
@@ -10,6 +21,10 @@
   letter-spacing: 0.06em;
   text-align: center;
   color: $first-text-color;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 .galary__item {
   position: relative;
