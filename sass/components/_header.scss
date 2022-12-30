@@ -1,21 +1,33 @@
 .page-header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
 }
+
 .page-header__wrapper {
   display: flex;
   align-items: center;
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
 .navigation__list {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 50px;
+  }
+}
+.navigation__item {
   display: flex;
-  gap: 50px;
 }
 .navigation__link {
-  display: flex;
   position: relative;
   align-items: center;
   padding: 32px 0;
@@ -49,18 +61,23 @@
   }
 }
 .contact {
-  display: flex;
-  margin-left: auto;
-  gap: 30px;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .contact__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 0;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: $second-text-color;
   fill: $second-text-color;
@@ -69,8 +86,32 @@
     color: $accent-color;
     fill: $accent-color;
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contact__icon {
-  margin-right: 10px;
   fill: inherit;
+  margin-right: 8px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
+  &--envelope {
+    @media screen and (min-width: $desktop) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &--phone {
+    @media screen and (min-width: $desktop) {
+      width: 10px;
+      height: 16px;
+    }
+  }
 }
