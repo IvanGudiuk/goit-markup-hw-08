@@ -4,22 +4,34 @@
 .team {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 .team__item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: auto;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    @media screen and (min-width: $tablet)
-    {
-      width: calc(100% - 30px/ 2)
-    }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 30px 32px;
 }
 .team__title {
