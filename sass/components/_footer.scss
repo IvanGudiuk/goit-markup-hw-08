@@ -1,6 +1,9 @@
 .flex-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  text-align: center;
 }
 .page-footer {
   background-size: 1600px;
@@ -18,13 +21,24 @@
   color: $text-color-on-bkg;
 }
 .page-footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-right: 70px;
+}
+.page-footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .page-footer__address {
   display: block;
   margin-bottom: 9px;
   margin-right: 0;
   padding: 0;
+  text-align: center;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -37,6 +51,9 @@
   gap: 9px;
   margin-right: 70px;
   padding-right: 24px;
+}
+.contact-list__item {
+  text-align: center;
 }
 .contact-list__link {
   transition: color $transition-time $transition-style;
@@ -73,6 +90,15 @@
 }
 .footer-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-form__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .footer-form__input {
   width: 358px;

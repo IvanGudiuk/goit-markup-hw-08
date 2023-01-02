@@ -2,10 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  outline: 1px solid red;
 }
-.clients-item {
-  display: flexbox;
+.clients__item {
   width: calc((100% - 30px) / 2);
 
   @media screen and (min-width: $tablet) {
@@ -20,8 +18,7 @@
   fill: inherit;
 }
 .clients__link {
-  background-color: aqua;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
