@@ -63,14 +63,51 @@
             </a>
           </li>
         </ul>
-        <svg class="page-header__icon" width="24" height="16">
-          <use href="./images/sprite.svg#icon-burger"></use>
-        </svg>
-      </div>
-      <div class="page-header__mobile is-open">
-        <svg class="page-header__close" width="19" height="19">
-          <use href="./images/sprite.svg#icon-cross"
-        </svg>
+        <button type="button" class="page-header__btn is-open" data-menu-button>
+          <svg width="40" height="40">
+            <use
+              class="page-header__open"
+              href="./images/sprite.svg#icon-burger"
+            ></use>
+            <use
+              class="page-header__close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu is-open" data-menu>
+          <nav>
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link mobile-menu__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contact">
+            <li class="mobile-menu__item">
+              <a href="tel:+380961111111" class="mobile-menu__phone"
+                >+38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Контент сторінки -->
@@ -558,5 +595,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
