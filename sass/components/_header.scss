@@ -10,8 +10,41 @@
 .page-header__wrapper {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.page-header__icon {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.page-header__mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+
+  @media screen and(min-width:$tablet) {
+    display: none;
+  }
 }
 
+.page-header__close {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  right: 25px;
+  top: 21px;
+  fill: #212121;
+}
 .navigation {
   display: flex;
   align-items: center;

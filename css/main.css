@@ -160,6 +160,44 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.page-header__icon {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .page-header__icon {
+    display: none;
+  }
+}
+
+.page-header__mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .page-header__mobile {
+    display: none;
+  }
+}
+
+.page-header__close {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  right: 25px;
+  top: 21px;
+  fill: #212121;
 }
 
 .navigation {
@@ -737,8 +775,8 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -753,13 +791,19 @@ button {
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
 }
+@media screen and (min-width: 1200px) {
+  .window {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .window__title {
   margin-bottom: 12px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.05;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -914,11 +958,18 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .agreement {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 30px;
+  }
 }
 
 .agreement__link {
