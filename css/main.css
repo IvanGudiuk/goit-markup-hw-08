@@ -1171,14 +1171,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .works__item {
