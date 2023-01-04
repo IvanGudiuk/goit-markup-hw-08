@@ -48,9 +48,13 @@
   letter-spacing: 0.03em;
   color: $second-text-color;
 }
-.works__img {
+.works__thumb {
   position: relative;
   overflow: hidden;
+}
+.works__img {
+  display: block;
+  width: 100%;
 }
 .works__overlay {
   position: absolute;

@@ -1233,9 +1233,14 @@ button {
   color: #757575;
 }
 
-.works__img {
+.works__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.works__img {
+  display: block;
+  width: 100%;
 }
 
 .works__overlay {
