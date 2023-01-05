@@ -63,7 +63,7 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="page-header__btn is-open" data-menu-button>
+        <button type="button" class="page-header__btn" data-menu-button>
           <svg width="40" height="40">
             <use
               class="page-header__open"
@@ -75,48 +75,52 @@
             ></use>
           </svg>
         </button>
-        <div class="mobile-menu is-open" data-menu>
-          <nav>
-            <ul class="mobile-menu__nav">
-              <li class="mobile-menu__page">
-                <a href="./index.html" class="mobile-menu__ref">Студія</a>
-              </li>
-              <li class="mobile-menu__page">
-                <a href="./portfolio.html" class="mobile-menu__ref"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="mobile-menu__page">
-                <a href="" class="mobile-menu__ref">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="mobile-menu__contact">
-            <li class="mobile-menu__item">
-              <a href="tel:+380961111111" class="mobile-menu__phone"
-                >+38 096 111 11 11
-              </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__links">
-            <li class="mobile-menu__social">
-              <a href="" class="mobile-menu__link">Instagram</a>
-            </li>
-            <li class="mobile-menu__social">
-              <a href="" class="mobile-menu__link">Twitter</a>
-            </li>
-            <li class="mobile-menu__social">
-              <a href="" class="mobile-menu__link">Facebook</a>
-            </li>
-            <li class="mobile-menu__social">
-              <a href="" class="mobile-menu__link">LinkedIn</a>
-            </li>
-          </ul>
+        <div class="mobile-wrapper" data-menu>
+          <div class="mobile-menu">
+            <nav>
+              <ul class="mobile-menu__nav">
+                <li class="mobile-menu__page">
+                  <a href="./index.html" class="mobile-menu__ref">Студія</a>
+                </li>
+                <li class="mobile-menu__page">
+                  <a href="./portfolio.html" class="mobile-menu__ref"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-menu__page">
+                  <a href="" class="mobile-menu__ref">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile-menu__group">
+              <ul class="mobile-menu__contact">
+                <li class="mobile-menu__item">
+                  <a href="tel:+380961111111" class="mobile-menu__phone"
+                    >+38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__links">
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">Instagram</a>
+                </li>
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">Twitter</a>
+                </li>
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">Facebook</a>
+                </li>
+                <li class="mobile-menu__social">
+                  <a href="" class="mobile-menu__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -451,75 +455,77 @@
       </section>
       <!-- Модальне вікно -->
       <div class="window-backdrop is-hidden" data-modal>
-        <div class="window">
-          <p class="window__title">Залиште свої дані, ми вам передзвонимо</p>
-          <form class="form">
-            <div class="form__field">
-              <label for="name" class="form__label">Ім'я</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="form__input"
+        <div class="window-backdrop__wrapper">
+          <div class="window">
+            <p class="window__title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="form">
+              <div class="form__field">
+                <label for="name" class="form__label">Ім'я</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  required
+                  autofocus
+                />
+                <svg width="12" height="12" class="form__icon">
+                  <use href="./images/sprite.svg#icon-name"></use>
+                </svg>
+              </div>
+              <div class="form__field">
+                <label for="phonenumber" class="form__label">Телефон</label>
+                <input
+                  type="tel"
+                  name="phonenumber"
+                  id="phonenumber"
+                  class="form__input"
+                  required
+                />
+                <svg width="13" height="13" class="form__icon">
+                  <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>
+              </div>
+              <div class="form__field">
+                <label for="email" class="form__label">Пошта</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form__input"
+                  required
+                />
+                <svg width="15" height="12" class="form__icon">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+              </div>
+              <label for="coment" class="form__label">Коментар</label>
+              <textarea
+                id="coment"
+                class="coment"
+                placeholder="Введіть текст"
+                rows="5"
                 required
-                autofocus
-              />
-              <svg width="12" height="12" class="form__icon">
-                <use href="./images/sprite.svg#icon-name"></use>
+              ></textarea>
+              <label class="agreement"
+                ><input
+                  type="checkbox"
+                  name="agreement"
+                  value="yes"
+                  class="agreement__input hidden"
+                /><span class="agreement__checkbox"></span>Погоджуюся з
+                розсилкою та приймаю&nbsp<a href="" class="agreement__link"
+                  >Умови договору</a
+                ></label
+              >
+              <button type="submit" class="form__button">Відправити</button>
+            </form>
+            <button class="window__button" data-modal-close>
+              <svg width="11" height="11" class="window__icon">
+                <use href="./images/sprite.svg#icon-cross"></use>
               </svg>
-            </div>
-            <div class="form__field">
-              <label for="phonenumber" class="form__label">Телефон</label>
-              <input
-                type="tel"
-                name="phonenumber"
-                id="phonenumber"
-                class="form__input"
-                required
-              />
-              <svg width="13" height="13" class="form__icon">
-                <use href="./images/sprite.svg#icon-tel"></use>
-              </svg>
-            </div>
-            <div class="form__field">
-              <label for="email" class="form__label">Пошта</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form__input"
-                required
-              />
-              <svg width="15" height="12" class="form__icon">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-            </div>
-            <label for="coment" class="form__label">Коментар</label>
-            <textarea
-              id="coment"
-              class="coment"
-              placeholder="Введіть текст"
-              rows="5"
-              required
-            ></textarea>
-            <label class="agreement"
-              ><input
-                type="checkbox"
-                name="agreement"
-                value="yes"
-                class="agreement__input hidden"
-              /><span class="agreement__checkbox"></span>Погоджуюся з розсилкою
-              та приймаю&nbsp<a href="" class="agreement__link"
-                >Умови договору</a
-              ></label
-            >
-            <button type="submit" class="form__button">Відправити</button>
-          </form>
-          <button class="window__button" data-modal-close>
-            <svg width="11" height="11" class="window__icon">
-              <use href="./images/sprite.svg#icon-cross"></use>
-            </svg>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </main>

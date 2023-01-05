@@ -1,7 +1,7 @@
 .page-header {
+  // position: relative;
   border-bottom: 1px solid #ececec;
   height: 60px;
-  position: relative;
 
   @media screen and (min-width: $tablet) {
     height: 80px;
@@ -12,126 +12,6 @@
   display: flex;
   align-items: center;
 }
-
-// Mobile menu
-
-.page-header__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 20;
-  right: 15px;
-  top: 10px;
-  display: block;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
-.page-header__open {
-  opacity: 1;
-  transition: opacity $transition-time $transition-style;
-  .page-header__btn.is-open & {
-    opacity: 0;
-  }
-}
-
-.page-header__close {
-  opacity: 0;
-  transition: opacity $transition-time $transition-style;
-  .page-header__btn.is-open & {
-    opacity: 1;
-  }
-  &:hover {
-    fill: $accent-color;
-  }
-}
-.mobile-menu {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  transform: translate(0, -100%);
-  background-color: $text-color-on-bkg;
-  &.is-open {
-    transform: translate(0, 0);
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
-.mobile-menu__nav {
-  margin-bottom: 302px;
-}
-.mobile-menu__page:not(:last-child) {
-  margin-bottom: 32px;
-}
-.mobile-menu__ref {
-  display: block;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $first-text-color;
-
-  &:hover {
-    color: $accent-color;
-    transform: translate(8px, -3px);
-  }
-}
-.mobile-menu__contact {
-  margin-bottom: 64px;
-}
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mobile-menu__phone {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-}
-.mobile-menu__mail {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $second-text-color;
-}
-.mobile-menu__links {
-  display: flex;
-}
-.mobile-menu__social:not(:last-child) {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-.mobile-menu__social:not(:first-child) {
-  padding-left: 10px;
-}
-.mobile-menu__link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-}
-
-// Mobile menu is over//
 
 .navigation {
   display: flex;
