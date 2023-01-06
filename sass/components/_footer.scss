@@ -20,11 +20,11 @@
     padding-right: 0;
     text-align: left;
     justify-content: flex-start;
+    align-items: baseline;
     gap: 0;
   }
 }
 .page-footer {
-  // background-size: 1600px;
   background-color: $bcg-color;
 }
 .page-footer__title {
@@ -50,6 +50,7 @@
   @media screen and (min-width: $desktop) {
     align-items: flex-start;
     text-align: left;
+    margin-right: 70px;
   }
 }
 .page-footer__address {
@@ -142,10 +143,12 @@
 .footer-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
 
   @media screen and(min-width:$desktop) {
+    width: 570px;
     align-items: flex-start;
   }
 }
@@ -178,6 +181,9 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and(min-width:$tablet) {
+    width: 450px;
   }
 
   @media screen and(min-width:$desktop) {
